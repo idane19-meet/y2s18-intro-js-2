@@ -1,5 +1,5 @@
 // YOUR TASK: Add more pictures!
-var pictures = ['./imgs/dog.jpg'];
+var pictures = ['./imgs/a.jpg','./imgs/b.jpg','./imgs/c.jpeg','./imgs/d.jpeg','./imgs/e.jpeg'];
 var currentIndex = 0;
 
 function showNextPicture() {
@@ -10,4 +10,7 @@ function showNextPicture() {
   }
 
   // YOUR TASK: Finish this function!
+  var img = document.getElementsByTagName("img");
+  img[0].src = pictures[currentIndex];
 }
+document.getElementsByTagName("button")[0].addEventListener("click", showNextPicture);
